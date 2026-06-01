@@ -1,0 +1,45 @@
+{
+  "name": "Fang Dong",
+  "email": "fdong22@m.fudan.edu.cn",
+  "title": "Ph.D. Candidate, Fudan University",
+  "advisor": "Prof. Li Shang",
+  "research_interests": [
+    "Mixture-of-Experts",
+    "Semantic-aware routing",
+    "Expert specialization",
+    "Efficient LLM inference",
+    "AI infrastructure"
+  ],
+  "publications": [
+    {
+      "title": "Oracle-MoE: Locality-preserving Routing in the Oracle Space",
+      "venue": "ICML 2025",
+      "role": "Co-first author"
+    },
+    {
+      "title": "Once Read is Enough: Domain-specific Pretraining-free Language Models",
+      "venue": "NeurIPS 2024",
+      "role": "First author"
+    },
+    {
+      "title": "SD-MoE: Spectral Decomposition for Effective Expert Specialization",
+      "venue": "ICML 2026",
+      "role": "Co-first author"
+    },
+    {
+      "title": "Multi-Head Attention as a Source of Catastrophic Forgetting in MoE Transformers",
+      "venue": "ICML 2026",
+      "role": "Author"
+    },
+    {
+      "title": "Metis: Training LLMs with FP4 Quantization",
+      "venue": "ICLR 2026",
+      "role": "Collaborator"
+    },
+    {
+      "title": "Spectra: Rethinking Optimizers for LLMs Under Spectral Anisotropy",
+      "venue": "ICML 2026",
+      "role": "Author"
+    }
+  ]
+}

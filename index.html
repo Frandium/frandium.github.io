@@ -1,1 +1,233 @@
-<h1>Fang Dong</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Fang Dong is a Ph.D. candidate at Fudan University working on semantic-aware MoE routing, efficient LLM inference, expert specialization, and AI infrastructure."
+    />
+    <title>Fang Dong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Fang Dong homepage">
+        <span class="brand-mark">FD</span>
+        <span>Fang Dong</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Ph.D. Candidate · Fudan University</p>
+          <h1>Semantic-aware MoE routing for efficient large language models.</h1>
+          <p class="lead">
+            I work on Mixture-of-Experts models, expert specialization, and
+            memory-efficient LLM inference. My research studies how sparse
+            computation can be organized by semantics rather than token identity,
+            so that MoE models become both more specialized and easier to deploy.
+          </p>
+          <div class="hero-actions" aria-label="Contact and profile links">
+            <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn">Email</a>
+            <a class="button" href="#publications">Publications</a>
+          </div>
+        </div>
+
+        <div class="research-visual" aria-label="MoE research map">
+          <div class="visual-title">Research Thread</div>
+          <svg viewBox="0 0 520 360" role="img" aria-labelledby="visual-title visual-desc">
+            <title id="visual-title">Semantic-aware MoE routing research map</title>
+            <desc id="visual-desc">
+              A diagram connecting token-dominated routing to semantic-aware
+              routing, expert specialization, and memory-efficient inference.
+            </desc>
+            <defs>
+              <linearGradient id="lineGradient" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#1f7a5c" />
+                <stop offset="100%" stop-color="#3454d1" />
+              </linearGradient>
+            </defs>
+            <path class="flow-line" d="M92 178 C178 88, 338 88, 428 178" />
+            <path class="flow-line subtle" d="M92 178 C178 268, 338 268, 428 178" />
+            <g class="node source">
+              <circle cx="92" cy="178" r="54" />
+              <text x="92" y="164">Token</text>
+              <text x="92" y="186">Identity</text>
+            </g>
+            <g class="node center">
+              <circle cx="260" cy="112" r="62" />
+              <text x="260" y="99">Semantic</text>
+              <text x="260" y="121">Routing</text>
+            </g>
+            <g class="node center secondary">
+              <circle cx="260" cy="248" r="62" />
+              <text x="260" y="235">Expert</text>
+              <text x="260" y="257">Locality</text>
+            </g>
+            <g class="node target">
+              <circle cx="428" cy="178" r="56" />
+              <text x="428" y="165">Efficient</text>
+              <text x="428" y="187">LLMs</text>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Making sparse computation semantic and deployable.</h2>
+        </div>
+        <div class="research-grid">
+          <article>
+            <h3>Semantic-aware MoE routing</h3>
+            <p>
+              I study why existing MoE gates are often dominated by token identity
+              and high-frequency directions, and how routing can instead follow
+              semantic structure in language representations.
+            </p>
+          </article>
+          <article>
+            <h3>Expert specialization</h3>
+            <p>
+              My work explores how experts can receive more coherent semantic
+              updates, learn long-tail domain knowledge, and reduce redundant
+              parameter subspaces.
+            </p>
+          </article>
+          <article>
+            <h3>Memory-efficient inference</h3>
+            <p>
+              I develop routing and prediction mechanisms that make MoE expert
+              activation more local and predictable, reducing expert swapping and
+              memory demand in constrained inference settings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Publications</p>
+          <h2>Work on MoE structure, routing, and efficient training.</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication featured">
+            <div class="venue">ICML 2025 · CCF-A · Co-first author</div>
+            <h3>Oracle-MoE: Locality-preserving Routing in the Oracle Space</h3>
+            <p>
+              Uses attention-output representations for locality-preserving MoE
+              routing, enabling a single input sequence to activate a much smaller
+              expert set and reducing memory demand during inference.
+            </p>
+          </article>
+          <article class="publication">
+            <div class="venue">NeurIPS 2024 · CCF-A · First author</div>
+            <h3>Once Read is Enough: Domain-specific Pretraining-free Language Models</h3>
+            <p>
+              Introduces cluster-guided sparse experts for learning long-tail
+              domain knowledge during pretraining without additional domain
+              pretraining or supervised fine-tuning.
+            </p>
+          </article>
+          <article class="publication">
+            <div class="venue">ICML 2026 · CCF-A · Co-first author</div>
+            <h3>SD-MoE: Spectral Decomposition for Effective Expert Specialization</h3>
+            <p>
+              Analyzes redundancy across expert parameter spaces and uses spectral
+              decomposition to promote more effective expert specialization.
+            </p>
+          </article>
+          <article class="publication">
+            <div class="venue">ICML 2026 · CCF-A</div>
+            <h3>Multi-Head Attention as a Source of Catastrophic Forgetting in MoE Transformers</h3>
+            <p>
+              Studies how mixed dispatch of attention-head features affects
+              knowledge retention, and proposes head-aware expert routing for MoE
+              continual learning.
+            </p>
+          </article>
+          <article class="publication">
+            <div class="venue">ICLR 2026 · CCF-A</div>
+            <h3>Metis: Training LLMs with FP4 Quantization</h3>
+            <p>
+              Collaborative work on spectral-decomposition based low-precision
+              training for large language models.
+            </p>
+          </article>
+          <article class="publication">
+            <div class="venue">ICML 2026 · CCF-A</div>
+            <h3>Spectra: Rethinking Optimizers for LLMs Under Spectral Anisotropy</h3>
+            <p>
+              Explores optimizer design under spectral anisotropy and improves
+              training efficiency through spectral constraints.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Research and engineering across models, systems, and deployment.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <div class="time">2022.09 - 2027.06</div>
+            <h3>Ph.D. Candidate, Fudan University</h3>
+            <p>
+              Advised by Prof. Li Shang. Research focus: MoE models, semantic-aware
+              routing, expert specialization, and efficient LLM inference.
+            </p>
+          </article>
+          <article>
+            <div class="time">2022.11 - 2023.02</div>
+            <h3>Research Intern, Microsoft Research Asia</h3>
+            <p>
+              Implemented neural architecture search algorithms in NNI and adapted
+              training workflows for multi-GPU PyTorch settings.
+            </p>
+          </article>
+          <article>
+            <div class="time">Selected projects</div>
+            <h3>Memory-friendly MoE inference</h3>
+            <p>
+              Developed and validated MoE routing and expert activation prediction
+              methods for reducing expert swapping, inference memory demand, and
+              deployment overhead.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to research conversations on efficient LLMs and MoE systems.</h2>
+        </div>
+        <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn">
+          fdong22@m.fudan.edu.cn
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Fang Dong</span>
+      <span>Built with GitHub Pages</span>
+    </footer>
+  </body>
+</html>
