@@ -14,32 +14,38 @@
     {
       "title": "Oracle-MoE: Locality-preserving Routing in the Oracle Space",
       "venue": "ICML 2025",
-      "role": "Co-first author"
+      "role": "Co-first author",
+      "url": "https://proceedings.mlr.press/v267/zhou25b.html"
     },
     {
       "title": "Once Read is Enough: Domain-specific Pretraining-free Language Models",
       "venue": "NeurIPS 2024",
-      "role": "First author"
+      "role": "First author",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/a1f12d8d3cc1b4789ff4ebec46e27609-Abstract-Conference.html"
     },
     {
       "title": "SD-MoE: Spectral Decomposition for Effective Expert Specialization",
       "venue": "ICML 2026",
-      "role": "Co-first author"
+      "role": "Co-first author",
+      "url": "https://arxiv.org/abs/2602.12556"
     },
     {
       "title": "Multi-Head Attention as a Source of Catastrophic Forgetting in MoE Transformers",
       "venue": "ICML 2026",
-      "role": "Author"
+      "role": "Author",
+      "url": "https://arxiv.org/abs/2602.12587"
     },
     {
       "title": "Metis: Training LLMs with FP4 Quantization",
       "venue": "ICLR 2026",
-      "role": "Collaborator"
+      "role": "Collaborator",
+      "url": "https://openreview.net/forum?id=I2ZrCi5O84"
     },
     {
       "title": "Spectra: Rethinking Optimizers for LLMs Under Spectral Anisotropy",
       "venue": "ICML 2026",
-      "role": "Author"
+      "role": "Author",
+      "url": "https://arxiv.org/abs/2602.11185"
     }
   ]
 }
