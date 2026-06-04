@@ -1,13 +1,13 @@
 const translations = {
   en: {
     metaDescription:
-      "Fang Dong is a Ph.D. candidate at Fudan University working on semantic-aware MoE routing, efficient LLM inference, expert specialization, and AI infrastructure.",
+      "Fang Dong is pursuing a Ph.D. in Computer Science at Fudan University, working on semantic-aware MoE routing, efficient LLM inference, expert specialization, and AI infrastructure.",
     toggleLabel: "中文",
     "nav.research": "Research",
     "nav.publications": "Publications",
     "nav.experience": "Experience",
     "nav.contact": "Contact",
-    "hero.eyebrow": "Ph.D. Candidate · Fudan University",
+    "hero.eyebrow": "Ph.D. in Computer Science · Fudan University",
     "hero.name": "Fang Dong",
     "hero.subtitle": "董方",
     "hero.lead":
@@ -20,7 +20,7 @@ const translations = {
     "button.publications": "Publications",
     "button.experience": "Experience",
     "facts.educationLabel": "Education",
-    "facts.education": "Ph.D. Candidate, Fudan University",
+    "facts.education": "Ph.D. in Computer Science, Fudan University",
     "facts.advisorLabel": "Advisor",
     "facts.advisor": "Prof. Li Shang",
     "facts.graduationLabel": "Expected Graduation",
@@ -56,7 +56,7 @@ const translations = {
       "Explores optimizer design under spectral anisotropy and improves training efficiency through spectral constraints.",
     "experience.eyebrow": "Experience",
     "experience.title": "Research and engineering across models, systems, and deployment.",
-    "experience.phdTitle": "Ph.D. Candidate, Fudan University",
+    "experience.phdTitle": "Ph.D. in Computer Science, Fudan University",
     "experience.phdText":
       "Advised by Prof. Li Shang. Research focus: MoE models, semantic-aware routing, expert specialization, and efficient LLM inference.",
     "experience.msraTitle": "Research Intern, Microsoft Research Asia",
@@ -72,13 +72,13 @@ const translations = {
   },
   zh: {
     metaDescription:
-      "董方，复旦大学博士生，研究方向包括 MoE 模型、语义感知路由、专家专业化和高效大模型推理。",
+      "董方，复旦大学计算机科学博士生，研究方向包括 MoE 模型、语义感知路由、专家专业化和高效大模型推理。",
     toggleLabel: "EN",
     "nav.research": "研究方向",
     "nav.publications": "学术成果",
     "nav.experience": "经历",
     "nav.contact": "联系",
-    "hero.eyebrow": "复旦大学博士生",
+    "hero.eyebrow": "复旦大学计算机科学博士生",
     "hero.name": "董方",
     "hero.subtitle": "Fang Dong",
     "hero.lead":
@@ -91,7 +91,7 @@ const translations = {
     "button.publications": "学术成果",
     "button.experience": "经历",
     "facts.educationLabel": "教育背景",
-    "facts.education": "复旦大学博士生",
+    "facts.education": "复旦大学计算机科学博士生",
     "facts.advisorLabel": "导师",
     "facts.advisor": "尚笠教授",
     "facts.graduationLabel": "预计毕业",
@@ -127,7 +127,7 @@ const translations = {
       "从谱各向异性的角度重新思考优化器设计，并通过谱约束提升训练效率。",
     "experience.eyebrow": "经历",
     "experience.title": "横跨模型、系统和部署的研究与工程经历。",
-    "experience.phdTitle": "复旦大学博士生",
+    "experience.phdTitle": "复旦大学计算机科学博士生",
     "experience.phdText":
       "导师为尚笠教授。研究方向包括 MoE 模型、语义感知路由、专家专业化和高效大模型推理。",
     "experience.msraTitle": "微软亚洲研究院研究实习生",
