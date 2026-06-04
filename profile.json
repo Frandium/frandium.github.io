@@ -1,6 +1,8 @@
 {
   "name": "Fang Dong",
   "email": "fdong22@m.fudan.edu.cn",
+  "phone": "+86 151 9204 3800",
+  "wechat": "+86 151 9204 3800",
   "title": "Ph.D. in Computer Science, Fudan University",
   "advisor": "Prof. Li Shang",
   "research_interests": [
@@ -46,6 +48,32 @@
       "venue": "ICML 2026",
       "role": "Author",
       "url": "https://arxiv.org/abs/2602.11185"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Microsoft Research Asia",
+      "type": "Internship",
+      "title": "Research Intern",
+      "summary": "Implemented neural architecture search algorithms in NNI and adapted training workflows for multi-GPU PyTorch settings."
+    },
+    {
+      "company": "Huawei Noah's Ark Lab",
+      "type": "Project",
+      "title": "Memory-friendly MoE architecture",
+      "summary": "Validated Oracle-MoE on industrial-scale training data and studied memory-efficient MoE structures under large-model pretraining settings."
+    },
+    {
+      "company": "Huawei Markov Lab",
+      "type": "Project",
+      "title": "Dynamic expert loading for MoE inference",
+      "summary": "Designed lightweight cross-layer expert activation predictors to prefetch only activated experts, reducing memory demand for on-device MoE inference."
+    },
+    {
+      "company": "Huawei Markov Lab",
+      "type": "Project",
+      "title": "Semantic quantization error modeling",
+      "summary": "Analyzed quantization sensitivity from the spectral perspective and explored dynamic mixed-precision strategies for balancing latency and quality."
     }
   ]
 }

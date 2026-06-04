@@ -27,6 +27,7 @@ const translations = {
     "facts.graduationLabel": "Expected Graduation",
     "facts.graduation": "June 2027",
     "facts.emailLabel": "Email",
+    "facts.phoneLabel": "Phone / WeChat",
     "research.eyebrow": "Research",
     "research.title": "Making sparse computation semantic and deployable.",
     "research.routingTitle": "Semantic-aware MoE routing",
@@ -56,19 +57,26 @@ const translations = {
     "publications.spectraText":
       "Explores optimizer design under spectral anisotropy and improves training efficiency through spectral constraints.",
     "experience.eyebrow": "Experience",
-    "experience.title": "Research and engineering across models, systems, and deployment.",
-    "experience.phdTitle": "Ph.D. in Computer Science, Fudan University",
-    "experience.phdText":
-      "Advised by Prof. Li Shang. Research focus: MoE models, semantic-aware routing, expert specialization, and efficient LLM inference.",
+    "experience.title": "Internships and projects across models, systems, and deployment.",
+    "experience.msraTime": "Internship · MSRA",
     "experience.msraTitle": "Research Intern, Microsoft Research Asia",
     "experience.msraText":
       "Implemented neural architecture search algorithms in NNI and adapted training workflows for multi-GPU PyTorch settings.",
-    "experience.projectsTime": "Selected projects",
-    "experience.projectsTitle": "Memory-friendly MoE inference",
-    "experience.projectsText":
-      "Developed and validated MoE routing and expert activation prediction methods for reducing expert swapping, inference memory demand, and deployment overhead.",
+    "experience.noahTime": "Project · Huawei Noah's Ark Lab",
+    "experience.noahTitle": "Memory-friendly MoE architecture",
+    "experience.noahText":
+      "Validated Oracle-MoE on industrial-scale training data and studied memory-efficient MoE structures under large-model pretraining settings.",
+    "experience.markovTime": "Project · Huawei Markov Lab",
+    "experience.markovTitle": "Dynamic expert loading for MoE inference",
+    "experience.markovText":
+      "Designed lightweight cross-layer expert activation predictors to prefetch only activated experts, reducing memory demand for on-device MoE inference.",
+    "experience.quantTime": "Project · Huawei Markov Lab",
+    "experience.quantTitle": "Semantic quantization error modeling",
+    "experience.quantText":
+      "Analyzed quantization sensitivity from the spectral perspective and explored dynamic mixed-precision strategies for balancing latency and quality.",
     "contact.eyebrow": "Contact",
     "contact.title": "Open to research conversations on efficient LLMs and MoE systems.",
+    "contact.phoneLabel": "Phone / WeChat",
     "footer.built": "Built with GitHub Pages"
   },
   zh: {
@@ -99,6 +107,7 @@ const translations = {
     "facts.graduationLabel": "预计毕业",
     "facts.graduation": "2027 年 6 月",
     "facts.emailLabel": "邮箱",
+    "facts.phoneLabel": "手机 / 微信",
     "research.eyebrow": "研究方向",
     "research.title": "让稀疏计算具备语义结构，并且更容易部署。",
     "research.routingTitle": "语义感知 MoE 路由",
@@ -128,19 +137,26 @@ const translations = {
     "publications.spectraText":
       "从谱各向异性的角度重新思考优化器设计，并通过谱约束提升训练效率。",
     "experience.eyebrow": "经历",
-    "experience.title": "横跨模型、系统和部署的研究与工程经历。",
-    "experience.phdTitle": "复旦大学计算机科学博士生",
-    "experience.phdText":
-      "导师为尚笠教授。研究方向包括 MoE 模型、语义感知路由、专家专业化和高效大模型推理。",
+    "experience.title": "横跨模型、系统和部署的实习与项目经历。",
+    "experience.msraTime": "实习 · 微软亚洲研究院",
     "experience.msraTitle": "微软亚洲研究院研究实习生",
     "experience.msraText":
       "实现 NNI 开源框架中的多类神经网络结构搜索算法，并基于 PyTorch 适配多卡训练流程。",
-    "experience.projectsTime": "代表项目",
-    "experience.projectsTitle": "内存友好的 MoE 推理",
-    "experience.projectsText":
-      "设计并验证 MoE 路由和 expert 激活预测方法，用于降低 expert swapping、推理显存需求和部署开销。",
+    "experience.noahTime": "项目 · 华为诺亚方舟实验室",
+    "experience.noahTitle": "内存友好的 MoE 结构",
+    "experience.noahText":
+      "在工业级训练数据上验证 Oracle-MoE，并研究大模型预训练场景下更节省内存的 MoE 结构。",
+    "experience.markovTime": "项目 · 华为马尔科夫实验室",
+    "experience.markovTitle": "MoE 推理时动态专家装卸载",
+    "experience.markovText":
+      "设计轻量跨层 expert 激活预测器，只预取即将激活的 expert，从而降低端侧 MoE 推理的内存需求。",
+    "experience.quantTime": "项目 · 华为马尔科夫实验室",
+    "experience.quantTitle": "语义量化误差建模",
+    "experience.quantText":
+      "从谱空间角度分析量化敏感性，并探索动态混合精度策略，以平衡推理时延和模型质量。",
     "contact.eyebrow": "联系",
     "contact.title": "欢迎围绕高效大模型和 MoE 系统展开研究交流。",
+    "contact.phoneLabel": "手机 / 微信",
     "footer.built": "基于 GitHub Pages 构建"
   }
 };

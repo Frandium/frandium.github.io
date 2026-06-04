@@ -17,4 +17,4 @@ The `en` block controls the English version, and the `zh` block controls the
 Chinese version. Keep the key names unchanged so the language toggle can still
 find the right text.
 
-Do not commit private recruiting notes, interview trackers, phone numbers, or non-public project details to this repository.
+Do not commit private recruiting notes, interview trackers, non-public contact details, or non-public project details to this repository.

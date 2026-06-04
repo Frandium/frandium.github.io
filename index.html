@@ -81,6 +81,10 @@
               <span class="fact-label" data-i18n="facts.emailLabel">Email</span>
               <a href="mailto:fdong22@m.fudan.edu.cn">fdong22@m.fudan.edu.cn</a>
             </div>
+            <div>
+              <span class="fact-label" data-i18n="facts.phoneLabel">Phone / WeChat</span>
+              <a href="tel:+8615192043800">+86 151 9204 3800</a>
+            </div>
           </div>
         </div>
       </section>
@@ -223,19 +227,11 @@
       <section id="experience" class="section">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
-          <h2 data-i18n="experience.title">Research and engineering across models, systems, and deployment.</h2>
+          <h2 data-i18n="experience.title">Internships and projects across models, systems, and deployment.</h2>
         </div>
         <div class="timeline">
           <article>
-            <div class="time">2022.09 - 2027.06</div>
-            <h3 data-i18n="experience.phdTitle">Ph.D. in Computer Science, Fudan University</h3>
-            <p data-i18n="experience.phdText">
-              Advised by Prof. Li Shang. Research focus: MoE models, semantic-aware
-              routing, expert specialization, and efficient LLM inference.
-            </p>
-          </article>
-          <article>
-            <div class="time">2022.11 - 2023.02</div>
+            <div class="time" data-i18n="experience.msraTime">Internship · MSRA</div>
             <h3 data-i18n="experience.msraTitle">Research Intern, Microsoft Research Asia</h3>
             <p data-i18n="experience.msraText">
               Implemented neural architecture search algorithms in NNI and adapted
@@ -243,12 +239,27 @@
             </p>
           </article>
           <article>
-            <div class="time" data-i18n="experience.projectsTime">Selected projects</div>
-            <h3 data-i18n="experience.projectsTitle">Memory-friendly MoE inference</h3>
-            <p data-i18n="experience.projectsText">
-              Developed and validated MoE routing and expert activation prediction
-              methods for reducing expert swapping, inference memory demand, and
-              deployment overhead.
+            <div class="time" data-i18n="experience.noahTime">Project · Huawei Noah's Ark Lab</div>
+            <h3 data-i18n="experience.noahTitle">Memory-friendly MoE architecture</h3>
+            <p data-i18n="experience.noahText">
+              Validated Oracle-MoE on industrial-scale training data and studied
+              memory-efficient MoE structures under large-model pretraining settings.
+            </p>
+          </article>
+          <article>
+            <div class="time" data-i18n="experience.markovTime">Project · Huawei Markov Lab</div>
+            <h3 data-i18n="experience.markovTitle">Dynamic expert loading for MoE inference</h3>
+            <p data-i18n="experience.markovText">
+              Designed lightweight cross-layer expert activation predictors to prefetch
+              only activated experts, reducing memory demand for on-device MoE inference.
+            </p>
+          </article>
+          <article>
+            <div class="time" data-i18n="experience.quantTime">Project · Huawei Markov Lab</div>
+            <h3 data-i18n="experience.quantTitle">Semantic quantization error modeling</h3>
+            <p data-i18n="experience.quantText">
+              Analyzed quantization sensitivity from the spectral perspective and
+              explored dynamic mixed-precision strategies for balancing latency and quality.
             </p>
           </article>
         </div>
@@ -259,9 +270,14 @@
           <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
           <h2 data-i18n="contact.title">Open to research conversations on efficient LLMs and MoE systems.</h2>
         </div>
-        <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn">
-          fdong22@m.fudan.edu.cn
-        </a>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn">
+            fdong22@m.fudan.edu.cn
+          </a>
+          <a class="button" href="tel:+8615192043800">
+            <span data-i18n="contact.phoneLabel">Phone / WeChat</span>: +86 151 9204 3800
+          </a>
+        </div>
       </section>
     </main>
 
