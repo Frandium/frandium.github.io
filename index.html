@@ -22,58 +22,63 @@
         <span class="brand-mark">FD</span>
         <span>Fang Dong</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#research" data-i18n="nav.research">Research</a>
+          <a href="#publications" data-i18n="nav.publications">Publications</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+          中文
+        </button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Ph.D. Candidate · Fudan University</p>
-          <h1>Fang Dong</h1>
-          <p class="subtitle">董方</p>
-          <p class="lead">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Ph.D. Candidate · Fudan University</p>
+          <h1 data-i18n="hero.name">Fang Dong</h1>
+          <p class="subtitle" data-i18n="hero.subtitle">董方</p>
+          <p class="lead" data-i18n="hero.lead">
             I work on Mixture-of-Experts models, semantic-aware routing,
             expert specialization, and memory-efficient LLM inference. I am
             looking for research and engineering roles on foundation model
             architecture, LLM training/inference systems, and efficient MoE.
           </p>
           <div class="focus-list" aria-label="Research and job focus">
-            <span>MoE Models</span>
-            <span>Foundation Model Architecture</span>
-            <span>LLM Training & Inference</span>
-            <span>Efficient Deployment</span>
+            <span data-i18n="focus.moe">MoE Models</span>
+            <span data-i18n="focus.architecture">Foundation Model Architecture</span>
+            <span data-i18n="focus.trainingInference">LLM Training & Inference</span>
+            <span data-i18n="focus.deployment">Efficient Deployment</span>
           </div>
           <div class="hero-actions" aria-label="Contact and profile links">
-            <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn">Email</a>
-            <a class="button" href="#publications">Publications</a>
-            <a class="button" href="#experience">Experience</a>
+            <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn" data-i18n="button.email">Email</a>
+            <a class="button" href="#publications" data-i18n="button.publications">Publications</a>
+            <a class="button" href="#experience" data-i18n="button.experience">Experience</a>
           </div>
         </div>
 
         <div class="profile-panel" aria-label="Fang Dong profile">
-          <div class="portrait" aria-label="Profile photo placeholder">
-            <span>FD</span>
+          <div class="portrait" aria-label="Profile photo">
+            <img src="assets/profile-photo.jpg" alt="Fang Dong portrait" />
           </div>
           <div class="profile-facts">
             <div>
-              <span class="fact-label">Education</span>
-              <strong>Ph.D. Candidate, Fudan University</strong>
+              <span class="fact-label" data-i18n="facts.educationLabel">Education</span>
+              <strong data-i18n="facts.education">Ph.D. Candidate, Fudan University</strong>
             </div>
             <div>
-              <span class="fact-label">Advisor</span>
-              <strong>Prof. Li Shang</strong>
+              <span class="fact-label" data-i18n="facts.advisorLabel">Advisor</span>
+              <strong data-i18n="facts.advisor">Prof. Li Shang</strong>
             </div>
             <div>
-              <span class="fact-label">Expected Graduation</span>
-              <strong>June 2027</strong>
+              <span class="fact-label" data-i18n="facts.graduationLabel">Expected Graduation</span>
+              <strong data-i18n="facts.graduation">June 2027</strong>
             </div>
             <div>
-              <span class="fact-label">Email</span>
+              <span class="fact-label" data-i18n="facts.emailLabel">Email</span>
               <a href="mailto:fdong22@m.fudan.edu.cn">fdong22@m.fudan.edu.cn</a>
             </div>
           </div>
@@ -82,29 +87,29 @@
 
       <section id="research" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Making sparse computation semantic and deployable.</h2>
+          <p class="eyebrow" data-i18n="research.eyebrow">Research</p>
+          <h2 data-i18n="research.title">Making sparse computation semantic and deployable.</h2>
         </div>
         <div class="research-grid">
           <article>
-            <h3>Semantic-aware MoE routing</h3>
-            <p>
+            <h3 data-i18n="research.routingTitle">Semantic-aware MoE routing</h3>
+            <p data-i18n="research.routingText">
               I study why existing MoE gates are often dominated by token identity
               and high-frequency directions, and how routing can instead follow
               semantic structure in language representations.
             </p>
           </article>
           <article>
-            <h3>Expert specialization</h3>
-            <p>
+            <h3 data-i18n="research.specializationTitle">Expert specialization</h3>
+            <p data-i18n="research.specializationText">
               My work explores how experts can receive more coherent semantic
               updates, learn long-tail domain knowledge, and reduce redundant
               parameter subspaces.
             </p>
           </article>
           <article>
-            <h3>Memory-efficient inference</h3>
-            <p>
+            <h3 data-i18n="research.inferenceTitle">Memory-efficient inference</h3>
+            <p data-i18n="research.inferenceText">
               I develop routing and prediction mechanisms that make MoE expert
               activation more local and predictable, reducing expert swapping and
               memory demand in constrained inference settings.
@@ -115,32 +120,32 @@
 
       <section id="publications" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Selected Publications</p>
-          <h2>Work on MoE structure, routing, and efficient training.</h2>
+          <p class="eyebrow" data-i18n="publications.eyebrow">Selected Publications</p>
+          <h2 data-i18n="publications.title">Work on MoE structure, routing, and efficient training.</h2>
         </div>
         <div class="publication-list">
           <article class="publication featured">
-            <div class="venue">ICML 2025 · CCF-A · Co-first author</div>
+            <div class="venue" data-i18n="publications.oracleVenue">ICML 2025 · CCF-A · Co-first author</div>
             <h3>Oracle-MoE: Locality-preserving Routing in the Oracle Space</h3>
-            <p>
+            <p data-i18n="publications.oracleText">
               Uses attention-output representations for locality-preserving MoE
               routing, enabling a single input sequence to activate a much smaller
               expert set and reducing memory demand during inference.
             </p>
           </article>
           <article class="publication">
-            <div class="venue">NeurIPS 2024 · CCF-A · First author</div>
+            <div class="venue" data-i18n="publications.onceVenue">NeurIPS 2024 · CCF-A · First author</div>
             <h3>Once Read is Enough: Domain-specific Pretraining-free Language Models</h3>
-            <p>
+            <p data-i18n="publications.onceText">
               Introduces cluster-guided sparse experts for learning long-tail
               domain knowledge during pretraining without additional domain
               pretraining or supervised fine-tuning.
             </p>
           </article>
           <article class="publication">
-            <div class="venue">ICML 2026 · CCF-A · Co-first author</div>
+            <div class="venue" data-i18n="publications.sdVenue">ICML 2026 · CCF-A · Co-first author</div>
             <h3>SD-MoE: Spectral Decomposition for Effective Expert Specialization</h3>
-            <p>
+            <p data-i18n="publications.sdText">
               Analyzes redundancy across expert parameter spaces and uses spectral
               decomposition to promote more effective expert specialization.
             </p>
@@ -148,7 +153,7 @@
           <article class="publication">
             <div class="venue">ICML 2026 · CCF-A</div>
             <h3>Multi-Head Attention as a Source of Catastrophic Forgetting in MoE Transformers</h3>
-            <p>
+            <p data-i18n="publications.mhaText">
               Studies how mixed dispatch of attention-head features affects
               knowledge retention, and proposes head-aware expert routing for MoE
               continual learning.
@@ -157,7 +162,7 @@
           <article class="publication">
             <div class="venue">ICLR 2026 · CCF-A</div>
             <h3>Metis: Training LLMs with FP4 Quantization</h3>
-            <p>
+            <p data-i18n="publications.metisText">
               Collaborative work on spectral-decomposition based low-precision
               training for large language models.
             </p>
@@ -165,7 +170,7 @@
           <article class="publication">
             <div class="venue">ICML 2026 · CCF-A</div>
             <h3>Spectra: Rethinking Optimizers for LLMs Under Spectral Anisotropy</h3>
-            <p>
+            <p data-i18n="publications.spectraText">
               Explores optimizer design under spectral anisotropy and improves
               training efficiency through spectral constraints.
             </p>
@@ -175,30 +180,30 @@
 
       <section id="experience" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Research and engineering across models, systems, and deployment.</h2>
+          <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
+          <h2 data-i18n="experience.title">Research and engineering across models, systems, and deployment.</h2>
         </div>
         <div class="timeline">
           <article>
             <div class="time">2022.09 - 2027.06</div>
-            <h3>Ph.D. Candidate, Fudan University</h3>
-            <p>
+            <h3 data-i18n="experience.phdTitle">Ph.D. Candidate, Fudan University</h3>
+            <p data-i18n="experience.phdText">
               Advised by Prof. Li Shang. Research focus: MoE models, semantic-aware
               routing, expert specialization, and efficient LLM inference.
             </p>
           </article>
           <article>
             <div class="time">2022.11 - 2023.02</div>
-            <h3>Research Intern, Microsoft Research Asia</h3>
-            <p>
+            <h3 data-i18n="experience.msraTitle">Research Intern, Microsoft Research Asia</h3>
+            <p data-i18n="experience.msraText">
               Implemented neural architecture search algorithms in NNI and adapted
               training workflows for multi-GPU PyTorch settings.
             </p>
           </article>
           <article>
-            <div class="time">Selected projects</div>
-            <h3>Memory-friendly MoE inference</h3>
-            <p>
+            <div class="time" data-i18n="experience.projectsTime">Selected projects</div>
+            <h3 data-i18n="experience.projectsTitle">Memory-friendly MoE inference</h3>
+            <p data-i18n="experience.projectsText">
               Developed and validated MoE routing and expert activation prediction
               methods for reducing expert swapping, inference memory demand, and
               deployment overhead.
@@ -209,8 +214,8 @@
 
       <section id="contact" class="section contact-section">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Open to research conversations on efficient LLMs and MoE systems.</h2>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Open to research conversations on efficient LLMs and MoE systems.</h2>
         </div>
         <a class="button primary" href="mailto:fdong22@m.fudan.edu.cn">
           fdong22@m.fudan.edu.cn
@@ -220,7 +225,8 @@
 
     <footer class="footer">
       <span>© 2026 Fang Dong</span>
-      <span>Built with GitHub Pages</span>
+      <span data-i18n="footer.built">Built with GitHub Pages</span>
     </footer>
+    <script src="translations.js"></script>
   </body>
 </html>
