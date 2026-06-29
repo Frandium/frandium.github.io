@@ -20,6 +20,10 @@ const translations = {
     "button.email": "Email",
     "button.cvEnglish": "CV · English",
     "button.cvChinese": "CV · 中文",
+    "button.copyWechat": "Copy WeChat / Phone",
+    "button.copyWechatNumber": "Copy WeChat: 151 9204 3800",
+    "toast.wechatCopied": "Phone / WeChat number copied: 151 9204 3800",
+    "toast.copyFailed": "Could not copy automatically. Please copy: 151 9204 3800",
     "button.publications": "Publications",
     "button.experience": "Experience",
     "link.paper": "Paper",
@@ -103,6 +107,10 @@ const translations = {
     "button.email": "邮箱",
     "button.cvEnglish": "英文简历",
     "button.cvChinese": "中文简历",
+    "button.copyWechat": "复制微信 / 手机号",
+    "button.copyWechatNumber": "复制微信号：151 9204 3800",
+    "toast.wechatCopied": "手机 / 微信号已复制：151 9204 3800",
+    "toast.copyFailed": "自动复制失败，请手动复制：151 9204 3800",
     "button.publications": "学术成果",
     "button.experience": "经历",
     "link.paper": "论文",
@@ -169,7 +177,10 @@ const translations = {
 
 const languageToggle = document.querySelector("#languageToggle");
 const descriptionMeta = document.querySelector('meta[name="description"]');
+const copyContactButtons = document.querySelectorAll(".copy-wechat-button");
+const copyToast = document.querySelector("#copyToast");
 const supportedLanguages = ["en", "zh"];
+let copyToastTimer;
 
 function getInitialLanguage() {
   const savedLanguage = window.localStorage.getItem("language");
@@ -202,6 +213,59 @@ function setLanguage(language) {
 languageToggle.addEventListener("click", () => {
   const nextLanguage = document.documentElement.lang.startsWith("zh") ? "en" : "zh";
   setLanguage(nextLanguage);
+});
+
+function fallbackCopy(value) {
+  const textarea = document.createElement("textarea");
+  textarea.value = value;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.appendChild(textarea);
+  textarea.select();
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  return copied;
+}
+
+function showCopyToast(message, isError = false) {
+  window.clearTimeout(copyToastTimer);
+  copyToast.textContent = message;
+  copyToast.classList.toggle("error", isError);
+  copyToast.classList.add("visible");
+  copyToastTimer = window.setTimeout(() => {
+    copyToast.classList.remove("visible");
+  }, 2400);
+}
+
+async function copyWechatNumber(value) {
+  const language = document.documentElement.lang.startsWith("zh") ? "zh" : "en";
+  try {
+    let copied = false;
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(value);
+        copied = true;
+      } catch (error) {
+        copied = false;
+      }
+    }
+    if (!copied) {
+      copied = fallbackCopy(value);
+    }
+    if (!copied) {
+      throw new Error("Copy command failed");
+    }
+    showCopyToast(translations[language]["toast.wechatCopied"]);
+  } catch (error) {
+    showCopyToast(translations[language]["toast.copyFailed"], true);
+  }
+}
+
+copyContactButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    copyWechatNumber(button.dataset.copyValue);
+  });
 });
 
 setLanguage(getInitialLanguage());

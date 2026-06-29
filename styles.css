@@ -234,6 +234,8 @@ h3 {
   border-radius: 0.5rem;
   background: rgba(255, 253, 248, 0.72);
   color: var(--ink);
+  cursor: pointer;
+  font: inherit;
   font-weight: 750;
   text-decoration: none;
 }
@@ -257,6 +259,37 @@ h3 {
 
 .button:hover {
   transform: translateY(-1px);
+}
+
+.copy-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 30;
+  max-width: min(24rem, calc(100% - 2rem));
+  padding: 0.75rem 0.95rem;
+  border: 1px solid rgba(39, 132, 91, 0.28);
+  border-radius: 0.5rem;
+  background: #173c2c;
+  box-shadow: 0 12px 30px rgba(23, 26, 31, 0.2);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.4;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.copy-toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.copy-toast.error {
+  border-color: rgba(154, 92, 32, 0.35);
+  background: #69401d;
 }
 
 .profile-panel {
@@ -300,10 +333,25 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
-.profile-facts a {
+.profile-facts a,
+.profile-copy-link {
   color: var(--accent);
   font-weight: 750;
   text-decoration: none;
+}
+
+.profile-copy-link {
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.profile-copy-link:hover {
+  text-decoration: underline;
 }
 
 .fact-label {
@@ -678,6 +726,14 @@ h3 {
     gap: 0.25rem;
     padding: 1.5rem 0 max(2rem, env(safe-area-inset-bottom));
     font-size: 0.82rem;
+  }
+
+  .copy-toast {
+    right: 1rem;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    left: 1rem;
+    max-width: none;
+    text-align: center;
   }
 }
 

@@ -88,12 +88,13 @@
               </svg>
               <span data-i18n="button.email">Email</span>
             </a>
-            <a class="button" href="tel:+8615192043800">
+            <button class="button copy-wechat-button" type="button" data-copy-value="15192043800">
               <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"></path>
+                <rect width="14" height="14" x="8" y="8" rx="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
               </svg>
-              <span data-i18n="contact.phoneLabel">Phone / WeChat</span>
-            </a>
+              <span data-i18n="button.copyWechat">Copy WeChat / Phone</span>
+            </button>
           </div>
         </div>
 
@@ -120,7 +121,9 @@
             </div>
             <div>
               <span class="fact-label" data-i18n="facts.phoneLabel">Phone / WeChat</span>
-              <a href="tel:+8615192043800">+86 151 9204 3800</a>
+              <button class="profile-copy-link copy-wechat-button" type="button" data-copy-value="15192043800">
+                +86 151 9204 3800
+              </button>
             </div>
           </div>
         </div>
@@ -315,15 +318,18 @@
             </svg>
             <span>fdong22@m.fudan.edu.cn</span>
           </a>
-          <a class="button" href="tel:+8615192043800">
+          <button class="button copy-wechat-button" type="button" data-copy-value="15192043800">
             <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"></path>
+              <rect width="14" height="14" x="8" y="8" rx="2"></rect>
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
             </svg>
-            <span data-i18n="contact.phoneLabel">Phone / WeChat</span>: +86 151 9204 3800
-          </a>
+            <span data-i18n="button.copyWechatNumber">Copy WeChat: 151 9204 3800</span>
+          </button>
         </div>
       </section>
     </main>
+
+    <div class="copy-toast" id="copyToast" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <footer class="footer">
       <span>© 2026 Fang Dong</span>
