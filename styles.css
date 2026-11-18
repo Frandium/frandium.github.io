@@ -444,7 +444,8 @@ h3 {
   background: rgba(23, 105, 170, 0.1);
 }
 
-.publication.featured {
+.publication.featured,
+.timeline article.featured {
   border-color: rgba(31, 122, 92, 0.42);
   background: linear-gradient(135deg, rgba(31, 122, 92, 0.11), rgba(255, 253, 248, 0.74));
 }
