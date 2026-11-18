@@ -3,16 +3,12 @@ const translations = {
     metaDescription:
       "Fang Dong is pursuing a Ph.D. in Computer Science at Fudan University, working on semantic-aware MoE routing, efficient LLM inference, expert specialization, and AI infrastructure.",
     toggleLabel: "中文",
-    "nav.research": "Research",
     "nav.publications": "Publications",
     "nav.experience": "Experience",
     "nav.contact": "Contact",
-    "hero.eyebrow": "Ph.D. in Computer Science · Fudan University",
     "hero.name": "Fang Dong",
     "hero.subtitle": "董方",
-    "hero.lead":
-      "I work on Mixture-of-Experts models, semantic-aware routing, expert specialization, and memory-efficient LLM inference. I am looking for research and engineering roles on foundation model architecture, LLM training/inference systems, and efficient MoE.",
-    "hero.availability": "Open to full-time research roles · Available from July 2027",
+    "hero.lead": "My research focuses on model architectures for pretraining and inference optimization for Mixture-of-Experts (MoE) models. I am currently interning with Tencent Hunyuan’s Pretrain Team.",
     "focus.moe": "MoE Models",
     "focus.architecture": "Foundation Model Architecture",
     "focus.trainingInference": "LLM Training & Inference",
@@ -28,24 +24,13 @@ const translations = {
     "button.experience": "Experience",
     "link.paper": "Paper",
     "facts.educationLabel": "Education",
-    "facts.education": "Ph.D. in Computer Science, Fudan University",
+    "facts.education": "Ph.D., School of Computer Science, Fudan University",
     "facts.advisorLabel": "Advisor",
     "facts.advisor": "Prof. Li Shang",
     "facts.graduationLabel": "Expected Graduation",
     "facts.graduation": "June 2027",
     "facts.emailLabel": "Email",
     "facts.phoneLabel": "Phone / WeChat",
-    "research.eyebrow": "Research",
-    "research.title": "Making sparse computation semantic and deployable.",
-    "research.routingTitle": "Semantic-aware MoE routing",
-    "research.routingText":
-      "I study why existing MoE gates are often dominated by token identity and high-frequency directions, and how routing can instead follow semantic structure in language representations.",
-    "research.specializationTitle": "Expert specialization",
-    "research.specializationText":
-      "My work explores how experts can receive more coherent semantic updates, learn long-tail domain knowledge, and reduce redundant parameter subspaces.",
-    "research.inferenceTitle": "Memory-efficient inference",
-    "research.inferenceText":
-      "I develop routing and prediction mechanisms that make MoE expert activation more local and predictable, reducing expert swapping and memory demand in constrained inference settings.",
     "publications.eyebrow": "Selected Publications",
     "publications.title": "Work on MoE structure, routing, and efficient training.",
     "publications.oracleVenue": "ICML 2025 · CCF-A · Co-first author",
@@ -63,11 +48,10 @@ const translations = {
       "Collaborative work on spectral-decomposition based low-precision training for large language models.",
     "publications.spectraText":
       "Explores optimizer design under spectral anisotropy and improves training efficiency through spectral constraints.",
-    "experience.eyebrow": "Experience",
-    "experience.title": "Internships and projects across models, systems, and deployment.",
+    "experience.title": "Internships / Projects",
     "experience.hunyuanTime": "Internship · Tencent Hunyuan",
     "experience.hunyuanTitle": "Research Intern, Foundation Model Pretraining",
-    "experience.hunyuanText": "Worked on foundation model pretraining and Mixture-of-Experts (MoE) architectures.",
+    "experience.hunyuanText": "Evaluated and studied architectures related to residual connections, including Hyper Connection, Engram, and AttnRes.",
     "experience.msraTime": "Internship · MSRA",
     "experience.msraTitle": "Research Intern, Microsoft Research Asia",
     "experience.msraText":
@@ -84,8 +68,6 @@ const translations = {
     "experience.quantTitle": "Semantic quantization error modeling",
     "experience.quantText":
       "Analyzed quantization sensitivity from the spectral perspective and explored dynamic mixed-precision strategies for balancing latency and quality.",
-    "contact.eyebrow": "Contact",
-    "contact.title": "Open to research conversations on efficient LLMs and MoE systems.",
     "contact.phoneLabel": "Phone / WeChat",
     "footer.built": "Built with GitHub Pages"
   },
@@ -93,16 +75,12 @@ const translations = {
     metaDescription:
       "董方，复旦大学计算机科学博士生，研究方向包括 MoE 模型、语义感知路由、专家专业化和高效大模型推理。",
     toggleLabel: "EN",
-    "nav.research": "研究方向",
     "nav.publications": "学术成果",
     "nav.experience": "经历",
     "nav.contact": "联系",
-    "hero.eyebrow": "复旦大学计算机科学博士生",
     "hero.name": "董方",
     "hero.subtitle": "Fang Dong",
-    "hero.lead":
-      "我的研究聚焦 Mixture-of-Experts 模型、语义感知路由、专家专业化和内存友好的大模型推理。目前主要面向基座模型结构、大模型训练与推理系统、高效 MoE 等方向的研究和工程岗位。",
-    "hero.availability": "正在寻找全职研究岗位 · 2027 年 7 月起可入职",
+    "hero.lead": "我的研究主要聚焦于预训练模型架构和 MoE 模型的推理优化。目前我在腾讯混元 Pretrain Team 实习。",
     "focus.moe": "MoE 模型",
     "focus.architecture": "基座模型结构",
     "focus.trainingInference": "大模型训练与推理",
@@ -118,24 +96,13 @@ const translations = {
     "button.experience": "经历",
     "link.paper": "论文",
     "facts.educationLabel": "教育背景",
-    "facts.education": "复旦大学计算机科学博士生",
+    "facts.education": "博士，复旦大学计算机科学技术学院",
     "facts.advisorLabel": "导师",
     "facts.advisor": "尚笠教授",
     "facts.graduationLabel": "预计毕业",
     "facts.graduation": "2027 年 6 月",
     "facts.emailLabel": "邮箱",
     "facts.phoneLabel": "手机 / 微信",
-    "research.eyebrow": "研究方向",
-    "research.title": "让稀疏计算具备语义结构，并且更容易部署。",
-    "research.routingTitle": "语义感知 MoE 路由",
-    "research.routingText":
-      "我研究为什么现有 MoE 路由容易被 token identity 和高频方向主导，并探索如何让路由更多地跟随语言表征中的语义结构。",
-    "research.specializationTitle": "专家专业化",
-    "research.specializationText":
-      "我的工作关注如何让 expert 接收更一致的语义更新、学习长尾领域知识，并减少 expert 参数空间中的冗余。",
-    "research.inferenceTitle": "内存友好的推理",
-    "research.inferenceText":
-      "我设计 MoE 路由和 expert 激活预测方法，使 expert 激活更局部、更可预测，从而降低受限推理场景下的 expert swapping 和显存需求。",
     "publications.eyebrow": "学术成果",
     "publications.title": "围绕 MoE 结构、路由和高效训练的研究工作。",
     "publications.oracleVenue": "ICML 2025 · CCF-A · 共同一作",
@@ -153,11 +120,10 @@ const translations = {
       "参与基于谱分解的低精度大模型训练研究，实现更稳健的 FP4 训练。",
     "publications.spectraText":
       "从谱各向异性的角度重新思考优化器设计，并通过谱约束提升训练效率。",
-    "experience.eyebrow": "经历",
-    "experience.title": "横跨模型、系统和部署的实习与项目经历。",
+    "experience.title": "实习/项目经历",
     "experience.hunyuanTime": "实习 · 腾讯混元",
     "experience.hunyuanTitle": "大模型预训练实习生",
-    "experience.hunyuanText": "参与基础模型预训练与混合专家（MoE）架构研究。",
+    "experience.hunyuanText": "参与残差连接相关架构的验证与研究，包括 Hyper Connection、Engram 和 AttnRes。",
     "experience.msraTime": "实习 · 微软亚洲研究院",
     "experience.msraTitle": "微软亚洲研究院研究实习生",
     "experience.msraText":
@@ -174,8 +140,6 @@ const translations = {
     "experience.quantTitle": "语义量化误差建模",
     "experience.quantText":
       "从谱空间角度分析量化敏感性，并探索动态混合精度策略，以平衡推理时延和模型质量。",
-    "contact.eyebrow": "联系",
-    "contact.title": "欢迎围绕高效大模型和 MoE 系统展开研究交流。",
     "contact.phoneLabel": "手机 / 微信",
     "footer.built": "基于 GitHub Pages 构建"
   }
