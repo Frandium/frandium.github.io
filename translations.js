@@ -31,8 +31,7 @@ const translations = {
     "facts.graduation": "June 2027",
     "facts.emailLabel": "Email",
     "facts.phoneLabel": "Phone / WeChat",
-    "publications.eyebrow": "Selected Publications",
-    "publications.title": "Work on MoE structure, routing, and efficient training.",
+    "publications.title": "Publications",
     "publications.oracleVenue": "ICML 2025 · CCF-A · Co-first author",
     "publications.oracleText":
       "Uses attention-output representations for locality-preserving MoE routing, enabling a single input sequence to activate a much smaller expert set and reducing memory demand during inference.",
@@ -103,8 +102,7 @@ const translations = {
     "facts.graduation": "2027 年 6 月",
     "facts.emailLabel": "邮箱",
     "facts.phoneLabel": "手机 / 微信",
-    "publications.eyebrow": "学术成果",
-    "publications.title": "围绕 MoE 结构、路由和高效训练的研究工作。",
+    "publications.title": "学术成果",
     "publications.oracleVenue": "ICML 2025 · CCF-A · 共同一作",
     "publications.oracleText":
       "使用 attention 输出表征进行保持局部性的 MoE 路由，使单条输入序列只激活更少的 expert，从而降低推理阶段的内存需求。",
