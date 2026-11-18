@@ -3,7 +3,7 @@
   "email": "fdong22@m.fudan.edu.cn",
   "phone": "+86 151 9204 3800",
   "wechat": "+86 151 9204 3800",
-  "title": "Ph.D. in Computer Science, Fudan University",
+  "title": "Ph.D., School of Computer Science, Fudan University",
   "advisor": "Prof. Li Shang",
   "research_interests": [
     "Mixture-of-Experts",
@@ -55,7 +55,7 @@
       "company": "Tencent Hunyuan",
       "type": "Internship",
       "title": "Research Intern, Foundation Model Pretraining",
-      "summary": "Worked on foundation model pretraining and Mixture-of-Experts (MoE) architectures."
+      "summary": "Evaluated and studied architectures related to residual connections, including Hyper Connection, Engram, and AttnRes."
     },
     {
       "company": "Microsoft Research Asia",
