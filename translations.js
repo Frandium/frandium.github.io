@@ -65,6 +65,9 @@ const translations = {
       "Explores optimizer design under spectral anisotropy and improves training efficiency through spectral constraints.",
     "experience.eyebrow": "Experience",
     "experience.title": "Internships and projects across models, systems, and deployment.",
+    "experience.hunyuanTime": "Internship · Tencent Hunyuan",
+    "experience.hunyuanTitle": "Research Intern, Foundation Model Pretraining",
+    "experience.hunyuanText": "Worked on foundation model pretraining and Mixture-of-Experts (MoE) architectures.",
     "experience.msraTime": "Internship · MSRA",
     "experience.msraTitle": "Research Intern, Microsoft Research Asia",
     "experience.msraText":
@@ -152,6 +155,9 @@ const translations = {
       "从谱各向异性的角度重新思考优化器设计，并通过谱约束提升训练效率。",
     "experience.eyebrow": "经历",
     "experience.title": "横跨模型、系统和部署的实习与项目经历。",
+    "experience.hunyuanTime": "实习 · 腾讯混元",
+    "experience.hunyuanTitle": "大模型预训练实习生",
+    "experience.hunyuanText": "参与基础模型预训练与混合专家（MoE）架构研究。",
     "experience.msraTime": "实习 · 微软亚洲研究院",
     "experience.msraTitle": "微软亚洲研究院研究实习生",
     "experience.msraText":
