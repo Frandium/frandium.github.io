@@ -52,6 +52,12 @@
   ],
   "experience": [
     {
+      "company": "Tencent Hunyuan",
+      "type": "Internship",
+      "title": "Research Intern, Foundation Model Pretraining",
+      "summary": "Worked on foundation model pretraining and Mixture-of-Experts (MoE) architectures."
+    },
+    {
       "company": "Microsoft Research Asia",
       "type": "Internship",
       "title": "Research Intern",
